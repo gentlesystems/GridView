@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol View: class {
+protocol View: AnyObject {
     func removeFromSuperview()
 }
 

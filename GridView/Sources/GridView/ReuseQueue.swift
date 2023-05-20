@@ -5,8 +5,9 @@
 //  Created by Kyohei Ito on 2016/11/03.
 //  Copyright © 2016年 Kyohei Ito. All rights reserved.
 //
+import UIKit
 
-public protocol Reusable: class {
+public protocol Reusable: AnyObject {
     var canReuse: Bool { get }
     func prepareForReuse()
 }

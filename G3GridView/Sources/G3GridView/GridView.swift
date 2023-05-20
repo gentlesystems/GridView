@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: -
-@objc public protocol GridViewDataSource: class {
+@objc public protocol GridViewDataSource: AnyObject {
     func gridView(_ gridView: GridView, numberOfRowsInColumn column: Int) -> Int
     func gridView(_ gridView: GridView, cellForRowAt indexPath: IndexPath) -> GridViewCell
     
